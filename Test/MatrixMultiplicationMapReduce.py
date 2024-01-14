@@ -73,3 +73,12 @@ class MatrixMultiplication(MRJob):
             reducer=self.reducer_multiply),
         MRStep(reducer=self.reducer_sum)
         ]
+
+
+if __name__ == '__main__':
+    t0 = time.time()
+    MatrixMultiplication.run()
+    t1 = time.time()
+
+    totalWithoutWrite = t1 - t0
+    print ("Total time for algorithmB: " + str(totalWithoutWrite))

@@ -49,7 +49,7 @@ if __name__ == "__main__":
     #test.test_equal()
     #test.test_speed("../Matrices/Test_equalA.txt", "../Matrices/Test_equalB.txt", "../Matrices/Equal_Multiplication_Result.txt")
     generator = Matrix_generator()
-    A = generator.generate(2048)
+    A = generator.generate(1024)
     generator.write("../Matrices/Test_sparseA.txt")
     B = A.transpose()
     generator.write("../Matrices/Test_sparseB.txt")
