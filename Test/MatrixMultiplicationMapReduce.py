@@ -81,4 +81,4 @@ if __name__ == '__main__':
     t1 = time.time()
 
     totalWithoutWrite = t1 - t0
-    print ("Total time for algorithmB: " + str(totalWithoutWrite))
+    print ("Total time for MapReduceAlgotithm: " + str(totalWithoutWrite))
